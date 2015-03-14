@@ -67,7 +67,7 @@ var app = {
 
           // add mapping request here
           img.dataset.mapURL = 'http://maps.googleapis.com/maps/api/staticmap?center=' + img.dataset.latitude + ',' + img.dataset.longitude + '&zoom=13&size=600x300&maptype=roadmap&sensor=true&markers=%7c' + img.dataset.latitude + ',' + img.dataset.longitude;
-
+console.log(img.dataset.mapURL);
           img.onclick = function() {
             app.toggleMap(this);
           };
