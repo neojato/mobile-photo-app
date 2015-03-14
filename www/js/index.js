@@ -55,6 +55,11 @@ var app = {
         for(var i=0; i<captureElements.length; i++) {
           captureElements[i].setAttribute('style', 'display:block;');
         }
+
+        var capButton = document.getElementById('capButton');
+        capButton.onclick = function() {
+          app.getImage();
+        };
         // END capture elements
     }
 };
