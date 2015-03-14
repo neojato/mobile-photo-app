@@ -77,6 +77,14 @@ var app = {
       polaroids.appendChild(img);
     },
 
+    onImageFail: function(message) {
+      alert('Failed because: ' + message);
+    },
+
+    onGeoError: function(error) {
+      alert(error.code + ': ' + error.message);
+    },
+
     toggleMap: function(element) {
       if(element.className == 'mapit') {
         element.className = '';
