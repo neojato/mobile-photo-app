@@ -52,6 +52,17 @@ var app = {
         }
       );
     },
+
+    onImageSuccess: function(imageURI) {
+      var img = document.createElement('img');
+      img.src = imageURI;
+      img.dataset.originalsrc = imageURI;
+
+      // Perform grolocation lookup here
+
+      var polaroids = document.getElementById('polaroid-images');
+      polaroids.appendChild(img);
+    },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
     
