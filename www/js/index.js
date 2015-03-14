@@ -76,6 +76,17 @@ var app = {
       var polaroids = document.getElementById('polaroid-images');
       polaroids.appendChild(img);
     },
+
+    toggleMap: function(element) {
+      if(element.className == 'mapit') {
+        element.className = '';
+        element.src = element.dataset.originalsrc;
+      } else {
+        element.className += 'mapit';
+        element.dataset.originalsrc = element.src;
+        element.src = element.dataset.mapurl;
+      }
+    },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
     
