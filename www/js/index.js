@@ -66,6 +66,7 @@ var app = {
           img.dataset.longitude = position.coords.longitude;
 
           // add mapping request here
+          img.dataset.mapURL = 'http://maps.googleapis.com/maps/api/staticmap?center=' + img.dataset.latitude + ',' + img.dataset.longitude + '&zoom=13&size=600x300&maptype=roadmap&sensor=true&markers=%7c' + img.dataset.latitude + ',' + img.dataset.longitude;
 
           img.onclick = function() {
             app.toggleMap(this);
