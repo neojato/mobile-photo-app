@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.mydomain.camerageo"
+        id        = "com.trinominis.camerageo"
         version   = "1.0.0">
 
     <name>GeoCamera</name>
@@ -12,8 +12,8 @@
         A PhoneGap app to take and tag a photo
     </description>
 
-    <author href="http://yourdomain.com" email="you@yourdomain.com">
-        Your Name
+    <author href="http://trinominis.com" email="trinominis@gmail.com">
+        Kyle Paul
     </author>
 
 
@@ -24,7 +24,7 @@
 
     <!-- START Preferences -->
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="2.7.0" />
+    <preference name="phonegap-version"           value="3.6.0" />
     <preference name="orientation"                value="default" />
     <preference name="target-device"              value="universal" />
     <preference name="fullscreen"                 value="true" />
