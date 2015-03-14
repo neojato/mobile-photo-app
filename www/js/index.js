@@ -59,6 +59,19 @@ var app = {
       img.dataset.originalsrc = imageURI;
 
       // Perform grolocation lookup here
+      // Grab the coords
+      navigator.geolocation.getCurrentPosition(
+        function(position) {
+          img.dataset.latitude = position.coords.latitude;
+          img.dataset.longitude = position.coords.longitude;
+
+          // add mapping request here
+
+          img.onclick = function() {
+            app.toggleMap(this);
+          };
+        }
+      , app.onGeoError);
 
       var polaroids = document.getElementById('polaroid-images');
       polaroids.appendChild(img);
