@@ -38,6 +38,20 @@ var app = {
         console.log("the device is ready");
         app.receivedEvent('deviceready');
     },
+
+    getImage: function() {
+      navigator.camera.getPicture(
+        app.onImageSuccess,
+        app.onImageFail,
+        {
+          quality: 100,
+          destinationType: Camera.DestinationType.FILE_URI,
+          targetWidth: 150,
+          targetHeight: 150,
+          saveToPhotoAlbum: false
+        }
+      );
+    },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
     
