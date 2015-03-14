@@ -51,9 +51,10 @@ var app = {
         console.log("Cordova has connected. Let the good times roll.");
             
         // START capture elements
-
-
-
+        var captureElements = document.body.querySelectorAll('.capture');
+        for(var i=0; i<captureElements.length; i++) {
+          captureElements[i].setAttribute('style', 'display:block;');
+        }
         // END capture elements
     }
 };
