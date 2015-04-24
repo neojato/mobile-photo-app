@@ -28,8 +28,10 @@
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
     <!-- END Features -->
-        
-
+    
+    <!-- Define platforms to build. -->
+    <gap:platform name="android" />
+    
     <!-- START Preferences -->
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="3.7.0" />
@@ -86,5 +88,4 @@
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
 
     <access origin="*"/>
-
 </widget>
